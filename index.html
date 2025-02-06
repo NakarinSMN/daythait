@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="icon" href="../Day/timetable.png">
+    <title>คำนวณวัน</title>
+    <link rel="stylesheet" href="styles.css">
+
+    
+    
+</head>
+<body>
+
+
+    <div class="bodymaim">
+
+ 
+
+
+        <div class="tab">
+ 
+            <button class="tablinks" onclick="openTab(event, 'Tab1')">ปรับรอบ</button>
+            <button class="tablinks" onclick="openTab(event, 'Tab2')">คำนวณวัน</button>
+            <button class="tablinks" onclick="openTab(event, 'Tab3')">เกี่ยวกับ</button>
+        </div>
+
+        <div class="timeclock">
+        
+            <div id="date"></div>
+            <div id="time"></div>
+
+        </div>
+
+        <div class="switch-post">
+            <label class="switch">
+                <input onclick="toggleTheme()" type="checkbox">
+                <span class="slider"></span>
+            </label>
+
+            
+        </div>
+
+
+        
+        <div id="Tab1" class="tabcontent">
+    
+            <div class="container">
+                
+                <label for="startDate">วันที่เริ่มต้น :</label>
+                <input type="date" id="startDate">
+                
+                <label for="endDate">วันที่สิ้นสุด :</label>
+                <input type="date" id="endDate">
+                
+                <button class="btn" onclick="calculateDays()">คำนวณ</button>
+        
+                <label class="labell" for="resultp">จำนวนวัน</label>
+                <p class="result" id="result">--</p>
+                <label class="labels" for="resultp">รย.1</label>
+                <p class="result" id="resultp">--</p>
+                <label class="labels" for="results">รย.2</label>
+                <p class="result" id="results">--</p>
+                <label class="labels" for="resultd">รย.3</label>
+                <p class="result" id="resultd">--</p>
+
+                <label class="labels" for="resultd">0-75cc</label>
+                <p class="result" id="resultcyp">--</p>
+
+                <label class="labels" for="resultd">76-125cc</label>
+                <p class="result" id="resultcys">--</p>
+
+                <label class="labels" for="resultd">126-150cc</label>
+                <p class="result" id="resultcyd">--</p>
+
+                <label class="labels" for="resultd">150ccขึ้นไป</label>
+                <p class="result" id="resultcyk">--</p>
+            </div>
+    
+        </div>
+        
+        <div id="Tab2" class="tabcontent">
+    
+            <div class="container">
+        
+                <label for="daysInput">กรอกจำนวนวันที่ต้องการ :</label>
+                <input type="number" id="daysInput" placeholder="กรอกจำนวนวันที่ต้องการ" min="1">
+                <button class="btn" onclick="calculateDate()">คำนวณ</button>
+                <label class="labelm" for="resultd">วันที่</label>
+                <div class="results" id="resultm">--</div>
+                <label class="labelh" for="resultu">รย.1</label>
+                <p class="result" id="resultu">--</p>
+                <label class="labels" for="resultj">รย.2</label>
+                <p class="result" id="resultj">--</p>
+                <label class="labels" for="resultk">รย.3</label>
+                <p class="result" id="resultk">--</p>
+
+                <label class="labels" for="resultd">0-75cc</label>
+                <p class="result" id="sumcyn">--</p>
+
+                <label class="labels" for="resultd">76-125cc</label>
+                <p class="result" id="sumcyg">--</p>
+
+                <label class="labels" for="resultd">126-150cc</label>
+                <p class="result" id="sumcyj">--</p>
+
+                <label class="labels" for="resultd">150ccขึ้นไป</label>
+                <p class="result" id="sumcyh">--</p>
+            </div>
+    
+        </div>
+
+        
+        <div id="Tab3" class="tabcontent">
+            <p class="ver">Ver. 2.1.0.0 #smnDeveloper</p>
+        </div>
+
+
+    </div>
+    
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
