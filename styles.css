@@ -60,14 +60,14 @@ body{
 
 
 .timeclock{
-  font-size: 12px;
+  font-size: 15px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   border-radius: 30px;
   border: var(--border-rang-solid);
-  max-width: 100px;
-  padding: 11px 20px 20px 11px;
+  padding: 9px;
+  width: 200px;
   margin-top: 8px;
   margin-left: 20%;
   background-color: var(--input-num);
@@ -76,19 +76,11 @@ body{
 
 }
 
-#date {
-  color: var(--taxt-color);
-  text-align: right;
 
+#time,#date {
+  color: var(--taxt-color);
 }
 
-#time {
-  color: var(--taxt-color);
-  text-align: left;
-  margin-left: 6%;
-}
-
-  /* สไตล์ของแท็บ */
 .tab {
   overflow: hidden;
   border: var(--border-rang-solid);
@@ -99,7 +91,6 @@ body{
   background-color: var(--input-bg);
   box-shadow: var(--input-boxshadow);
 }
-
 
 
 .tab button {
