@@ -6,8 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
-    <link rel="icon" href="timetable.png">
-    <title>คำนวณวัน</title>
+    <link rel="icon" href="./timetable.png">
+    <title>ปรับรอบพรบ</title>
     <link rel="stylesheet" href="styles.css">
 
     
@@ -22,26 +22,29 @@
 
 
         <div class="tab">
- 
             <button class="tablinks" onclick="openTab(event, 'Tab1')">ปรับรอบ</button>
             <button class="tablinks" onclick="openTab(event, 'Tab2')">คำนวณวัน</button>
             <button class="tablinks" onclick="openTab(event, 'Tab3')">เกี่ยวกับ</button>
         </div>
 
-        <div class="timeclock">
-        
-            <div id="date"></div>
-            <div id="time"></div>
-
-        </div>
-
-        <div class="switch-post">
-            <label class="switch">
-                <input onclick="toggleTheme()" type="checkbox">
-                <span class="slider"></span>
-            </label>
-
+        <div class="maintimclock">
             
+            
+            <div class="timeclock">
+                
+                <div id="date"></div>
+                <div id="time"></div>
+                
+            </div>
+            
+            <div class="switch-post">
+                <label class="switch">
+                    <input onclick="toggleTheme()" type="checkbox">
+                    <span class="slider"></span>
+                </label> 
+            </div>
+            
+
         </div>
 
 
@@ -115,7 +118,7 @@
 
         
         <div id="Tab3" class="tabcontent">
-            <p class="ver">Ver. 2.1.5.0 #smnDeveloper</p>
+            <p class="ver">Ver. 2.1.0.0 #smnDeveloper</p>
         </div>
 
 
