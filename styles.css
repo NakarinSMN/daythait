@@ -67,7 +67,7 @@ body{
   border-radius: 30px;
   border: var(--border-rang-solid);
   max-width: 100px;
-  padding: 11px;
+  padding: 11px 20px 20px 11px;
   margin-top: 8px;
   margin-left: 20%;
   background-color: var(--input-num);
